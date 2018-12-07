@@ -1,0 +1,118 @@
+*{font-family: 'Muli', sans-serif;}
+
+body.cz-shot header:before {transform: rotateX(65deg);}
+
+header {position: fixed;right: 0;left: 0;top: 0;z-index: 2;}
+header:before {content: '';position: absolute;left: 0;right: 0;top: 0;height: 200px;background: url('../images/headerbg.png');background-position: bottom;transition: all ease .4s;transform: rotateX(0deg);}
+
+header:after {content: '';position: absolute;top: 0;right: 0;left: 0;height: 72px;background: white;z-index: -1;}
+
+header div.nav {padding: 20px 0px;margin-bottom: 20px;}
+header div.nav a.logo {width: 250px;}
+header div.nav a.logo img {}
+header div.nav > ul {display: flex;align-items: center;justify-content: flex-end;flex: 1;}
+header div.nav > ul > li {margin-left: 3px;}
+header div.nav > ul > li > a {padding: 3px 5px;color: #002e55;}
+header div.nav > ul > li > a:hover {color: #ef6d7a;}
+header div.nav > ul > li > button {font-family: inherit;border: 2px solid #002e55;padding: 5px 15px;border-radius: 20px;margin-left: 15px;color: #ffffff;background: #002e55;outline: none;transition: all ease .4s;}
+header div.nav > ul > li > button:hover {background: transparent;color: #002e55;}
+header div.nav > ul > li.profile-nav {position: relative;}
+header div.nav > ul > li.profile-nav .wrapper {position: absolute;right: -15px;left: 0;margin-top: 10px;top: 0px;opacity: 0;visibility: hidden;transition: all ease .4s;}
+header div.nav > ul > li.profile-nav .wrapper a {display: block;text-align: center;padding: 3px 0px;color: #002e55;border: 2px solid #002e55;margin: 3px;border-radius: 50px;background: white;transition: all ease .4s;}
+header div.nav > ul > li.profile-nav .wrapper button {outline:none;display: block;margin: auto;width: calc(100% - 10px);margin-top: 5px;border-radius: 50px;border: 2px solid #ef6d7a;padding: 7px 0px;font-family: inherit;color: white;background: #ef6d7a;transition: all ease .4s;}
+header div.nav > ul > li.profile-nav .wrapper a:hover {background: #002e55;color: white;border: 2px solid white;}
+header div.nav > ul > li.profile-nav:hover .wrapper {visibility: visible;opacity: 1;top: 25px;}
+
+section.search-slider {position: relative;display: flex;align-items: center;height: 100vh;background-image: url('../images/slider-bg.png');background-position: center;}
+section.search-slider h1 {color: white;text-align: center;margin: 10px 0px;}
+section.search-slider form {width: 50%;margin: auto;position: relative;}
+section.search-slider form input {width: 100%;height: 52px;padding: 0px 22px;font-family: inherit;border: 2px solid white;background: #ffffff24;transition: all ease .4s;border-radius: 50px;font-size: 17px;}
+section.search-slider form input::placeholder {color: #ffffffc4;}
+section.search-slider form input:focus {background: white;}
+section.search-slider form button {position: absolute;right: 7px;top: 6px;bottom: 6px;font-family: inherit;border: none;border-radius: 50px;padding: 5px 18px;border: 2px solid white;background: #ffffff;color: #001c37;outline: none;transition: all ease .4s;}
+section.search-slider form input:focus + button {background: white;color: #001c37;border: 2px solid #001c37;}
+section.search-slider form input:focus + button:hover {background: #001c37;color: white;}
+section.search-slider form input:focus::placeholder {color: #001c37;}
+
+section.exams {position: relative;text-align: center;margin-top: -78px;}
+section.exams h2 {position: relative;color: white;font-size: 5rem;font-weight: bold;letter-spacing: 1px;}
+section.exams div.owl-exams div.item a {background: #ef6d7a;width: 100%;padding: 20px 0px;color: white;margin: 13px 0px;border-radius: 10px;border: 2px solid transparent;box-shadow: 0px 2px 6px #00000029;transition: all ease .4s;}
+section.exams div.owl-exams div.item a:hover {border: 2px solid #ef6d7a;color: #ef6d7a;background: white;box-shadow: none;}
+section.exams div.owl-exams div.owl-nav {position: absolute;right: 0;left: 0;top: 34%;transform: translateY(-50%);display: flex;align-items: center;}
+section.exams div.owl-exams div.owl-nav button.owl-next,
+section.exams div.owl-exams div.owl-nav button.owl-prev {position: absolute;width: 40px;height: 40px;background-color: #ef6d7a!important;font-size: 22px!important;border-radius: 50%!important;border: 2px solid white!important;outline: none;color: white;}
+section.exams div.owl-exams button.owl-next {right: -30px;}
+section.exams div.owl-exams button.owl-prev {left: -30px;}
+
+
+div#user .forgot-password {text-align: center;margin: 15px 0px 15px 0px;position: relative;}
+div#user .forgot-password button {background: none;border: none;font-family: inherit;color: #5a5a5a;background: white;padding: 0px 15px;position: relative;font-size: 14px;outline:none;}
+div#user .forgot-password:before {content: '';position: absolute;bottom: 9px;left: 10%;right: 10%;border-bottom: 1px solid #d2d2d2;}
+div#user .forgot-password button:hover {color: red;}
+
+div#user form {max-width: 400px;position: relative;margin: auto;text-align: center;}
+div#user form div.item {width: 100%;}
+div#user form div.item label {background: white;bottom: -10px;position: relative;margin-bottom: -10px;padding: 0px 14px;font-size: 18px;}
+div#user form div.item input {width: 100%;height: 45px;border: 2px solid #002e55;border-radius: 20px;padding: 0px 40px;font-size: 18px;font-family: inherit;}
+div#user form > button {margin-top: 10px;font-family: inherit;padding: 8px 40px;border: 2px solid #002e55;border-radius: 50px;background: #002e55;color: white;transition: all ease .4s;}
+div#user form > button:hover {background: white;color: #002e55;}
+
+div#user div.signup {position: relative;}
+div#user div.signup p {text-align: center;}
+div#user div.signup button {display: block;margin: 10px auto;font-family: inherit;padding: 5px 35px;border-radius: 30px;position: relative;border: 2px solid gray;outline: none;transition: all ease .3s;}
+div#user div.signup:before {content: '';position: absolute;right: 0;left: 0;bottom: 24px;border-bottom: 2px solid gray;z-index: 0;}
+div#user div.signup button:hover {background: #002e55; color: white; border: 2px solid #002e55; }
+
+div#user form#user-register {display: none;}
+div#user form#sendpassword {display: none;}
+div#user form h6 {font-weight: bold;font-size: 2rem;color: #ef6d7a;}
+
+
+section.sinavlar {background-image: url('../images/slider-bg.png');min-height: 100vh;display: flex;align-items: center;color: white;background-position: center;}
+section.sinavlar div.wrapper {padding: 0 50px;max-height: 500px;overflow: auto;}
+section.sinavlar h2 {text-align: center; margin-top: 50px; margin-bottom: 20px; position: relative; }
+section.sinavlar h2:before {content: '';position: absolute;right: 0;left: 0;bottom: -6px;height: 2px;background: linear-gradient(45deg, #ffffff00, white,transparent);}
+section.sinavlar div.wrapper div.item {}
+section.sinavlar div.wrapper div.item a {width: 100%;display: flex;margin: 20px 10px;background: linear-gradient(45deg, white, transparent);padding: 4px 20px;border-radius: 50px;align-items: center;transition: all ease .4s;}
+section.sinavlar div.wrapper div.item a img {width: 60px;margin-left: 20px;}
+section.sinavlar div.wrapper div.item a p {font-size: 2rem;margin-left: 20px;font-weight: bold;color: #002e55;}
+
+section.sinavlar div.wrapper div.item a:before {content: '';position: absolute;}
+section.sinavlar div.wrapper div.item a:hover {background: linear-gradient(45deg, white, #ffffff9c);}
+
+section.sinavlar div.wrapper::-webkit-scrollbar {width: 16px;height: 16px;}
+section.sinavlar div.wrapper::-webkit-scrollbar-button {width: 0px;height: 0px;}
+section.sinavlar div.wrapper::-webkit-scrollbar-thumb {background: #ffffff;border: 0px none #ffffff;border-radius: 50px;}
+section.sinavlar div.wrapper::-webkit-scrollbar-thumb:hover {background: #e1e1e1;}
+section.sinavlar div.wrapper::-webkit-scrollbar-thumb:active {background: #ffffff;}
+section.sinavlar div.wrapper::-webkit-scrollbar-track {background: #ffffff00;border: 0px none #ffffff;border-radius: 100px;}
+section.sinavlar div.wrapper::-webkit-scrollbar-track:hover {background: #ffffff00;}
+section.sinavlar div.wrapper::-webkit-scrollbar-track:active {background: #ffffff00;}
+section.sinavlar div.wrapper::-webkit-scrollbar-corner {background: transparent;}
+
+
+section.sinavlar.detail div.wrapper div.item {display: flex;align-items: center;background-color: white;color: black;padding: 10px 25px;border-radius: 10px;margin-bottom: 20px;}
+section.sinavlar.detail div.wrapper div.item div.content {flex: 1;}
+section.sinavlar.detail div.wrapper div.item div.content h3 {font-weight: bold;color: #002e55;margin-bottom: 15px;}
+section.sinavlar.detail div.wrapper div.item div.content h6 {font-weight: 100;color: #272727;border-bottom: 1px solid #00000014;margin-bottom: 6px;padding-bottom: 6px;}
+section.sinavlar.detail div.wrapper div.item div.content p {font-size: 13px;line-height: 22px;color: gray;}
+section.sinavlar.detail div.wrapper div.item div.buttons {border-left: 1px solid #00000014;min-width: 200px;}
+section.sinavlar.detail div.wrapper div.item div.buttons a {text-align: center;display: block;margin: 8px 11px;padding: 4px 0px;border: 2px solid #002e55;color: #002e55;transition: all ease .4s;}
+section.sinavlar.detail div.wrapper div.item div.buttons a:hover {background: #002e55;color: white;}
+
+
+/* About us */
+section.aboutus {margin-top: 250px; } section.aboutus {} section.aboutus h2 {font-weight: bold; color: #02a9f4; margin-bottom: 10px; }
+
+/* Contact */
+section.iletisim {display: flex;height: 100vh;align-items: center;background-image: url('../images/aboutus2.png');background-position: bottom;background-repeat: no-repeat;background-size: cover;margin-top: 20px;}
+section.iletisim h2 {font-size: 3rem;font-weight: bold;color: #ef6d7a;}
+section.iletisim p {color: #feafa2;position: relative;top: -13px;left: 2px;}
+section.iletisim form {border: 3px solid #ef6d7afa;padding: 20px;background: #ffffff78;border-radius: 20px;max-width: 550px;padding-top: 5px;}
+section.iletisim form label {margin-bottom: -10px;color: #ef6d7a;background: white;position: relative;bottom: -8px;left: 29px;font-weight: bold;padding: 0px 10px;}
+section.iletisim form input {width: 100%;height: 44px;border: 2px solid #ef6d7a;border-radius: 50px;margin-bottom: 7px;padding: 0px 20px;font-family: inherit;}
+section.iletisim form textarea {display: block;width: 100%;border: 2px solid #ef6d7a;border-radius: 5px;max-height: 150px;height: 150px;min-height: 150px;font-family: inherit;padding: 10px 20px;}
+section.iletisim form button {margin: 10px auto;display: block;padding: 8px 30px;border: 2px solid #ef6d7a;font-family: inherit;background: white;border-radius: 30px;margin-bottom: -10px;outline: none;transition: all ease .4s;}
+section.iletisim form button:hover {background: #ef6d7a;color: white;}
+
+p.copyright {text-align: center;width: 100%;margin: 20px 0px;}
